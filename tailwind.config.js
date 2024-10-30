@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Nunito', '"Nunito Placeholder"', 'sans-serif'],
+        'shantell': ['"Shantell Sans"', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }
