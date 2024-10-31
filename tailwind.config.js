@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Nunito', '"Nunito Placeholder"', 'sans-serif'],
-        'shantell': ['"Shantell Sans"', 'cursive'],
+        sans: ['Inter', 'Inter Placeholder', 'sans-serif'],
+        inter: ['Inter', 'Inter Placeholder', 'sans-serif'],
       },
     },
   },
