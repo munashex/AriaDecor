@@ -48,8 +48,8 @@ const Home = () => {
       </div>
 
       {/* our services we provide section */}
-      <div className={`mt-20 lg:mt-28 py-11 rounded-md ${theme === 'light' ? 'bg-[#EDECEC]' : 'bg-gray-200 text-black'}`}>
-        <h1 className="text-3xl lg:text-6xl text-center font-bold">Services</h1>
+      <div className={`mt-20 lg:mt-28 py-11 rounded-md ${theme === 'light' ? 'bg-[#EDECEC]' : 'bg-[#454547] text-black'}`}>
+        <h1 className={`text-3xl lg:text-6xl text-center font-bold ${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>Services</h1>
         
         <div className="mt-9 grid grid-cols-1 lg:grid-cols-2 gap-11 p-3 md:px-7">
           {whatWeProvide.map((service) => (
@@ -59,8 +59,8 @@ const Home = () => {
               />
 
               <div className='flex flex-col gap-1 items-center'>
-                <h1 className="text-xl font-bold lg:text-2xl">{service.name}</h1>
-                <h1>{service.description} :</h1>
+                <h1 className={`text-xl font-bold lg:text-2xl ${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>{service.name}</h1>
+                <h1 className={`${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>{service.description} :</h1>
                 <div className="flex flex-wrap gap-2 justify-center mt-2">
                   <h1 className="bg-red-200 p-1 px-3 rounded-full text-red-800 font-bold">{service.service1}</h1>
                   <h1 className="bg-blue-200 p-1 px-3 rounded-full text-blue-800 font-bold">{service.service2}</h1> 
