@@ -10,11 +10,11 @@ const {theme} = useContext(ThemeContext)
 
     return (
         <div className="fixed bottom-7 z-20 right-11 flex items-center">
-          <div className={`p-1 hidden md:flex  font-bold rounded-md ${theme === 'light' ? 'bg-[#242323] text-white':  'bg-[#F5F5F5] text-black'  }`}>
+          <div className={`p-1 px-3 shadow hidden lg:flex rounded-l-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>
             Chat with us
           </div>
-          <button>
-            <BiLogoWhatsappSquare size={60} color="#2DB742"/>
+          <button className={`rounded-md shadow font-bold ${theme === 'light' ? 'bg-slate-200' : 'bg-gray-200' }`}>
+            <BiLogoWhatsappSquare size={50} color="#2DB742"/>
           </button>
         </div>
     )

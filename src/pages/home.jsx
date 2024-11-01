@@ -22,11 +22,11 @@ const Home = () => {
         
         <div className="flex">
           <div className={`inline-block p-2 rounded-md py-6 md:max-w-5xl ${theme === 'light' ? "bg-[#EDECEC]" : "bg-[#242323]"}`}>
-            <ul className="grid grid-cols-1 px-5 lg:grid-cols-2 marker:text-[#DE3163] list-disc gap-y-1.5 lg:gap-x-8">
-              <li className={theme === 'light' ? 'bg-[#dcd9d9] p-1 rounded-md text-black' : 'bg-[#2e2d2d] p-1 rounded-md'}>Custom backdrop designs that tell your story</li>
-              <li className={theme === 'light' ? 'bg-[#dcd9d9] p-1 rounded-md text-black' : 'bg-[#2e2d2d] p-1 rounded-md'}>Elegant event structures that define your space</li>
-              <li className={theme === 'light' ? 'bg-[#dcd9d9] p-1 rounded-md text-black' : 'bg-[#2e2d2d] p-1 rounded-md'}>Enchanting table arrangements that delight your guests</li>
-              <li className={theme === 'light' ? 'bg-[#dcd9d9] p-1 rounded-md text-black' : 'bg-[#2e2d2d] p-1 rounded-md'}>Ambient décor that sets the perfect mood</li>
+            <ul className="grid grid-cols-1 px-5 lg:grid-cols-2   gap-y-1.5 lg:gap-x-8">
+              <li className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>Custom backdrop designs that tell your story</li>
+              <li className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>Elegant event structures that define your space</li>
+              <li className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>Enchanting table arrangements that delight your guests</li>
+              <li className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>Ambient décor that sets the perfect mood</li>
             </ul>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Home = () => {
       </div>
 
       {/* our services we provide section */}
-      <div className={`mt-20 lg:mt-28 py-11 rounded-md ${theme === 'light' ? 'bg-[#EDECEC]' : 'bg-[#505052] text-black'}`}>
+      <div className={`mt-20 lg:mt-28 py-11 rounded-md ${theme === 'light' ? 'bg-[#EDECEC]' : 'bg-[#2E2D2D] text-black'}`}>
         <h1 className={`text-3xl lg:text-6xl text-center font-bold ${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>Services</h1>
         
         <div className="mt-9 grid grid-cols-1 lg:grid-cols-2 gap-11 p-3 md:px-7">
@@ -63,9 +63,9 @@ const Home = () => {
                 <h1 className={`text-xl font-bold lg:text-2xl ${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>{service.name}</h1>
                 <h1 className={`${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>{service.description} :</h1>
                 <div className="flex flex-wrap gap-2 justify-center mt-2">
-                  <h1 className="bg-red-200 p-1 px-3 rounded-full text-red-800 font-bold">{service.service1}</h1>
-                  <h1 className="bg-blue-200 p-1 px-3 rounded-full text-blue-800 font-bold">{service.service2}</h1> 
-                  <h1 className="bg-green-200 p-1 px-3 rounded-full text-green-800 font-bold">{service.service3}</h1>   
+                  <h1 className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>{service.service1}</h1>
+                  <h1 className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>{service.service2}</h1> 
+                  <h1 className={`p-1 px-3 rounded-md font-bold ${theme === 'light' ? 'bg-slate-200 text-slate-800' : 'bg-gray-200 text-gray-800' }`}>{service.service3}</h1>   
                 </div>
               </div>
             </div>
