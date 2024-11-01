@@ -4,6 +4,7 @@ import { aboutExperience } from '../data/about';
 import { FaPlus } from "react-icons/fa6";
 import { whatWeProvide } from "../data/services";
 import WhyYouChooseUs from "../components/whyYouChooseUs";
+import homeVideo from '../images/homeVideo.mp4'
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,6 +16,17 @@ const Home = () => {
         <h1 className="text-3xl font-bold md:text-4xl lg:text-6xl lg:max-w-4xl">Crafting Magical Moments Through Design</h1>
         <h1 className="md:text-lg lg:max-w-6xl">Transform your special moments into magical memories with AriaDeco's premier event decoration and setup services. We specialize in creating enchanting spaces that capture the essence of your celebration, whether it's an intimate birthday gathering, a ceremonial event, or a professional photoshoot setting. Our attention to detail and artistic vision brings your dreams to life, one beautiful backdrop at a time.</h1>
       </div>
+
+      <div className="mt-16 lg:mt-20">
+  <video 
+    src={homeVideo}
+    muted
+    autoPlay
+    playsInline
+    loop            
+    className="w-full h-96 object-cover rounded-md  lg:h-[650px]"
+  />
+</div>
 
       <div className="mt-11 lg:mt-16 space-y-2.5">
         <h1 className="text-xl font-bold lg:text-2xl">Our Signature Touch</h1>

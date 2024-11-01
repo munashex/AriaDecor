@@ -27,7 +27,7 @@ function WhyYouChooseUs() {
             <img src={item.image} 
             className="object-cover rounded-md h-96  lg:h-[550px] w-full" 
             />
-            <div className="absolute bottom-9 space-y-2 py-7 bg-black bg-opacity-50 text-[#FDFCEE] px-2 rounded-md"> 
+            <div className="absolute bottom-9  space-y-2 py-7 bg-black bg-opacity-50 text-[#FDFCEE] px-2 rounded-md"> 
              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">{item.motto}</h1> 
              <h1 className="">{item.mottoDescription}</h1>
              <div className="pt-4 inline-flex gap-2">
@@ -56,7 +56,7 @@ function WhyYouChooseUs() {
                     {activeTab === faq.question ? 
                       <MdOutlineKeyboardArrowUp size={30}/> : 
                       <MdOutlineKeyboardArrowDown size={30}/>
-                    }
+                   }
                   </span>
                 </button>
                 {activeTab === faq.question && (
