@@ -9,7 +9,7 @@ const WhatsAppUs = () => {
 const {theme} = useContext(ThemeContext) 
 
     return (
-        <div className="fixed bottom-7 right-11 flex items-center">
+        <div className="fixed bottom-7 z-20 right-11 flex items-center">
           <div className={`p-1 hidden md:flex  font-bold rounded-md ${theme === 'light' ? 'bg-[#242323] text-white':  'bg-[#F5F5F5] text-black'  }`}>
             Chat with us
           </div>

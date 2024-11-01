@@ -49,7 +49,7 @@ return (
 
             <div className="gap-y-2 flex flex-col">
             {navLinks.map((link) => (
-              <Link to={link.url} className="text-xl">{link.name}</Link>
+              <Link key={link.url} to={link.url} className="text-xl">{link.name}</Link>
             ))}
             </div>
 
@@ -78,7 +78,7 @@ return (
             <div className="text-lg flex gap-6  items-center">
             
             {navLinks.map((link) => (
-              <Link to={link.url}>{link.name}</Link>
+              <Link key={link.url} to={link.url}>{link.name}</Link>
             ))}  
              
              <button className="inline-flex  rounded-md items-center gap-2 p-1.5 font-bold w-full text-white bg-[#DE3163]">

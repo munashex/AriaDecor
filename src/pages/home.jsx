@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { aboutExperience } from '../data/about';
 import { FaPlus } from "react-icons/fa6";
 import { whatWeProvide } from "../data/services";
+import WhyYouChooseUs from "../components/whyYouChooseUs";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -48,7 +49,7 @@ const Home = () => {
       </div>
 
       {/* our services we provide section */}
-      <div className={`mt-20 lg:mt-28 py-11 rounded-md ${theme === 'light' ? 'bg-[#EDECEC]' : 'bg-[#454547] text-black'}`}>
+      <div className={`mt-20 lg:mt-28 py-11 rounded-md ${theme === 'light' ? 'bg-[#EDECEC]' : 'bg-[#505052] text-black'}`}>
         <h1 className={`text-3xl lg:text-6xl text-center font-bold ${theme === 'dark' ? 'text-[#FEFEFA]' : ''}`}>Services</h1>
         
         <div className="mt-9 grid grid-cols-1 lg:grid-cols-2 gap-11 p-3 md:px-7">
@@ -70,6 +71,11 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* why you choose section  */}
+      <div className="mt-20 lg:mt-28">
+      <WhyYouChooseUs/>
       </div>
     </div>
   );
