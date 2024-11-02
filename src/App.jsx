@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import WhatsAppUs from './components/WhatsAppUs'
 import {ThemeContext} from './theme/ThemeProvider' 
 import { useContext } from 'react'
+import About from './pages/About'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const {theme} = useContext(ThemeContext)
       <div>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
       </div>
      </Router>

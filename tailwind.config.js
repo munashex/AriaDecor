@@ -9,8 +9,11 @@ export default {
       fontFamily: {
         sans: ['Inter', 'Inter Placeholder', 'sans-serif'],
         inter: ['Inter', 'Inter Placeholder', 'sans-serif'],
+        'shantell': ['"Shantell Sans"', 'cursive'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }

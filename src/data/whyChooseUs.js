@@ -1,4 +1,4 @@
-import image from '../images/whyYouChooseUs.avif'
+import image from '../images/whyYouChooseUs.jpg'
 
 export const whyYouChooseUs = [
   {
