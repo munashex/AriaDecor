@@ -3,6 +3,7 @@ import {useState} from 'react'
 import Values from "../components/Values"
 import InfiniteImageCarousel from "../components/InfiniteImageCarousel"
 import Evolution from "../components/Evolution"
+import OurApproach from "../components/OurApproach"
 
 
 const About = () => {
@@ -45,10 +46,13 @@ return (
 <Values/>
 
 {/* images slider carousel  */}
-{/* <InfiniteImageCarousel/> */}
+<InfiniteImageCarousel/>
 
 {/* our journey section */}
   <Evolution/>
+
+  {/* our approach section  */}
+  <OurApproach/>
 </div> 
 )
 }

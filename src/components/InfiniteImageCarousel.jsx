@@ -5,7 +5,7 @@ const InfiniteImageCarousel = ({ speed = 10000 }) => {
   const [translateX, setTranslateX] = useState(0);
   
   // Repeat images array to create infinite effect
-  const repeatedImages = [...carouselImages, ...carouselImages, ...carouselImages, ...carouselImages, ...carouselImages, ...carouselImages];
+  const repeatedImages = [...carouselImages, ...carouselImages,];
 
   useEffect(() => {
     const animate = () => {
