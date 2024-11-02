@@ -1,6 +1,9 @@
 import InfiniteCarousel from "../components/InfiniteCarousel"
 import {useState} from 'react'
 import Values from "../components/Values"
+import InfiniteImageCarousel from "../components/InfiniteImageCarousel"
+import Evolution from "../components/Evolution"
+
 
 const About = () => {
 
@@ -40,7 +43,12 @@ return (
 
 {/* values section  */}
 <Values/>
-  
+
+{/* images slider carousel  */}
+{/* <InfiniteImageCarousel/> */}
+
+{/* our journey section */}
+  <Evolution/>
 </div> 
 )
 }
