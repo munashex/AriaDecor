@@ -34,7 +34,7 @@ const OurApproach = () => {
                   : 'bg-[#1B1B1B] px-4 py-4'
               }`}
             >
-              <h1 className="text-5xl bg-[#1F3630] w-fit text-white p-6 rounded-md">
+              <h1 className="text-5xl skew-y-6 bg-[#1F3630] w-fit text-white p-6 rounded-md">
                 {item.id}
               </h1>
             </div>
