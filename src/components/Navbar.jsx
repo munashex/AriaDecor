@@ -49,7 +49,7 @@ return (
 
             <div className="gap-y-2 flex flex-col">
             {navLinks.map((link) => (
-              <Link key={link.url} to={link.url} className="text-xl">{link.name}</Link>
+              <Link key={link.url} to={link.url} className="text-xl" onClick={() => setOpenNav(!openNav)}>{link.name}</Link>
             ))}
             </div>
 
