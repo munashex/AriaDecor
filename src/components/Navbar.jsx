@@ -119,6 +119,7 @@ const Navbar = () => {
                     <Link 
                       key={item.id}
                       to={`/service/${item.id}`}
+                      onClick={() => setShowServices(!showServices)}
                       className={`hover:text-[#DE3163] transition-colors animate-fade-down duration-200 font-bold p-1 rounded-md ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#323131]'}`}
                     >
                       {item.name}
