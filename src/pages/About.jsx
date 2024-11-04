@@ -13,7 +13,7 @@ return (
 <div className="mt-7 md:mt-10 lg:mt-16">
 <InfiniteCarousel/> 
 
-<div className="mt-16 lg:mt-24 space-y-3">
+<div className="mt-16 lg:mt-24 space-y-3 animate-fade-right animate-duration-1000 animate-delay-500">
  <h1 className="text-lg lg:text-3xl lg:max-w-7xl font-semibold">Welcome to Ariadeco, your premier destination for event decoration and backdrop designs. Since our establishment, we've been transforming ordinary spaces into extraordinary experiences, one celebration at a time</h1>
  <h1 className="lg:text-lg">What started as a passion for creating beautiful spaces has blossomed into a full-service decoration company. Our journey began with simple backdrop designs and has evolved into creating comprehensive event experiences. Today, we're proud to be trusted by countless clients for their most precious moments - from intimate birthday celebrations to grand ceremonial events.</h1>
 </div>

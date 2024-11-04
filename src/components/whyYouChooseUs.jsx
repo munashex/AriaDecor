@@ -61,7 +61,7 @@ function WhyYouChooseUs() {
                 </button>
                 {activeTab === faq.question && (
                   <div className="pb-4">
-                    <h1>{faq.answer}</h1>
+                    <h1 className={`animate-fade-down  p-1 rounded-md animate-delay-150 animate-duration-1000`}>{faq.answer}</h1>
                   </div>
                 )}
              </div>

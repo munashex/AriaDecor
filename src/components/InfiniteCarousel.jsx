@@ -33,7 +33,7 @@ const InfiniteCarousel = ({ speed = 20000 }) => {
             key={index}
             className="flex-none inline-block"
           >
-           <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl font-shantell">{item.toUpperCase()}</h1>
+           <h1 className="text-4xl animate-fade-down animate-delay-300 animate-duration-500 font-bold md:text-5xl lg:text-7xl font-shantell">{item.toUpperCase()}</h1>
           </div>
         ))}
       </div>
