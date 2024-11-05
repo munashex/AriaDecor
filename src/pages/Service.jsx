@@ -11,7 +11,11 @@ const {id} = useParams()
 const findServiceById = service.find((item) => item.id === Number(id)) 
 const {theme} = useContext(ThemeContext)
 
-const filteredServices = services.filter((service) => service.id !== Number(id))
+const filteredServices = services.filter((service) => service.id !== Number(id)) 
+
+const scrollToTop = () => {
+  window.scrollTo({top: 0, behavior: "smooth"})
+}
 
     return (
       <div className="mt-9 lg:mt-16">
@@ -78,6 +82,7 @@ const filteredServices = services.filter((service) => service.id !== Number(id))
                     <Link 
                       key={item.id}
                       to={`/service/${item.id}`}
+                      onClick={scrollToTop}
                       className={`hover:text-[#DE3163] transition-colors animate-fade-down duration-200 font-bold p-1 lg:text-lg rounded-md ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#323131]'}`}
                     >
                       {item.name}
