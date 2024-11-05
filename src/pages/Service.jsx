@@ -4,11 +4,14 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../theme/ThemeProvider";
 import { useContext } from "react";
+import services from "../data/navServices";
 
 const Service = () => {
 const {id} = useParams()
 const findServiceById = service.find((item) => item.id === Number(id)) 
 const {theme} = useContext(ThemeContext)
+
+const filteredServices = services.filter((service) => service.id !== Number(id))
 
     return (
       <div className="mt-9 lg:mt-16">
@@ -25,7 +28,7 @@ const {theme} = useContext(ThemeContext)
           </Link>
 
           <img src={findServiceById.image}
-          className="w-full h-96 object-cover rounded-md  lg:h-[550px] mt-11" 
+          className="w-full h-96 object-cover rounded-md  lg:h-[600px] mt-11" 
           />
                
            <div  className="flex flex-col  lg:flex-row gap-y-11 mt-11 lg:mt-20 justify-between lg:items-start">
@@ -67,6 +70,21 @@ const {theme} = useContext(ThemeContext)
            </div>
 
 
+           {/* other services we provide */}
+           <div className="mt-20 lg:mt-28"> 
+            <h1 className="text-2xl lg:text-3xl font-bold">Other Services</h1>
+           <div className={`${theme === 'dark' ? 'bg-[#242323]' : 'bg-[#EDECEC]'} mt-6 lg:mt-11 py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 rounded-lg p-4`}>
+              {filteredServices.map((item) => (
+                    <Link 
+                      key={item.id}
+                      to={`/service/${item.id}`}
+                      className={`hover:text-[#DE3163] transition-colors animate-fade-down duration-200 font-bold p-1 lg:text-lg rounded-md ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#323131]'}`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+           </div>
         </div> 
       ): 
       (
