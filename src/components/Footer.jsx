@@ -26,7 +26,7 @@ const scrollToTop = () => {
 }
 
     return (
-        <div className={`mt-24  px-2 lg:px-9  py-8 lg:py-16  rounded-t-md lg:mt-36  text-white ${theme === 'dark' ? 'bg-[#242323]' : 'bg-[#1D322D]'}`}>
+        <div className={`mt-24  px-2 lg:px-9  py-8 lg:py-16  rounded-t-md lg:mt-36  text-white ${theme === 'dark' ? 'bg-[#2E2D2D]' : 'bg-[#1D322D]'}`}>
          
          <div className="flex flex-col gap-x-7 gap-y-9 md:flex-row flex-wrap justify-between lg:justify-evenly">
          {/* navlinks  */}
