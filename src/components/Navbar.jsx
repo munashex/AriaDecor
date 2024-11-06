@@ -13,7 +13,6 @@ import services from '../data/navServices';
 
 const navLinks = [
   {name: "About", url: "/about"},
-  {name: "Portfolio", url: "/portfolio"}
 ]
 
 const Navbar = () => {
