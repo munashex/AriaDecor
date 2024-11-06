@@ -75,10 +75,10 @@ const Navbar = () => {
               )}
             </div>
 
-            <button className="text-lg animate-fade-down animate-delay-500 animate-duration-1000 flex justify-center items-center gap-3 font-bold w-full text-white bg-[#DE3163] p-2 rounded-xl">
+            <Link to="/contact" onClick={() => setOpenNav(!openNav)}  className="text-lg animate-fade-down animate-delay-500 animate-duration-1000 flex justify-center items-center gap-3 font-bold w-full text-white bg-[#DE3163] p-2 rounded-xl">
               Contact Us
               <span><FaArrowRightLong size={22}/></span>
-            </button>
+            </Link>
 
             <div className="flex flex-col gap-1 animate-fade-down animate-delay-1000 animate-duration-1000"> 
               <h1 className="text-xl">Call Us Now</h1> 
@@ -129,10 +129,10 @@ const Navbar = () => {
               )}
             </div>
              
-            <button className="inline-flex rounded-md items-center gap-2 p-1.5 font-bold w-full text-white bg-[#DE3163]">
+            <Link to='/contact' className="inline-flex rounded-md items-center gap-2 p-1.5 font-bold w-full text-white bg-[#DE3163]">
               Contact Us
               <span><FaArrowRightLong size={20}/></span>
-            </button>
+            </Link>
               
           </div>
           <>{theme === 'light' ? 

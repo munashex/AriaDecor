@@ -6,6 +6,8 @@ import {ThemeContext} from './theme/ThemeProvider'
 import { useContext } from 'react'
 import About from './pages/About'
 import Service from './pages/Service'
+import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -21,8 +23,10 @@ const {theme} = useContext(ThemeContext)
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/service/:id" element={<Service/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       </div>
+      <Footer/>
      </Router>
     </div>
   )
