@@ -3,7 +3,7 @@ import  { useEffect, useState } from 'react';
 
 const ContactCarousel = ({ speed = 20000 }) => {
   const [translateX, setTranslateX] = useState(0);
-  const text = "Contact us - ARIADECO STUDIO - About us - ARIADECO STUDIO - Contact us - ARIADECO STUDIO - Contact us - ARIADECO STUDIO - Contact us - ARIADECO STUDIO -";
+  const text = "Contact us - ARIADECO STUDIO -Contactus - ARIADECO STUDIO - Contact us - ARIADECO STUDIO - Contact us - ARIADECO STUDIO - Contact us - ARIADECO STUDIO -";
   const repeatedText = Array(10).fill(text);
 
   useEffect(() => {

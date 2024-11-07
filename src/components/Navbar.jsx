@@ -81,7 +81,7 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-1 animate-fade-down animate-delay-1000 animate-duration-1000"> 
               <h1 className="text-xl">Call Us Now</h1> 
-              <a href="tel:" className="text-lg underline underline-offset-2">+2763 546 0625</a>
+              <a href="tel:+263715022422" className="text-lg underline underline-offset-2">+263 71 502 2422</a>
             </div>
           </div>
         )}
