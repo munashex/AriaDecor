@@ -1,6 +1,6 @@
 # Ariadeco
 
-[![Ariadeco Screenshot](https://github.com/munashex/AriaDecor/blob/main/public/Screenshot%202024-11-11%2014.22.43.png)](https://aria-decor-one.vercel.app/)
+[![Ariadeco Screenshot](https://github.com/munashex/AriaDecor/blob/main/public/Screenshot%202024-11-11%2014.31.28.png)
 
 **Ariadeco** specializes in creating custom event backdrops, photoshoot setups, and décor for all types of occasions. From birthdays and ceremonies to corporate gatherings, Ariadeco crafts bespoke designs that transform any space into a beautiful, memorable environment.
 
